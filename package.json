@@ -1,0 +1,26 @@
+{
+  "name": "purs-dependency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd prep-data && ruby fetch_repos.rb && ruby mk_json.rb && cd .. && browserify index.js -o dist/js/index.js"
+  },
+  "author": "Nebuta <nebuta.office@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "chroma-js": "^1.1.1",
+    "d3": "^3.5.12",
+    "gulp": "^3.9.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.1"
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PureScript libraries</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', 'Helvetica', SansSerif;
+        }
+        #draw_zone {
+            left: 230px;
+            position: absolute;
+        }
+        #info {
+            height: 100%;
+            width: 200px;
+            left: 0px;
+            top: 0px;
+            padding: 5px;
+            position: absolute;
+            background: #efe9ff;
+            font-size: 12px;
+            overflow: auto;
+        }
+        h2 {
+            margin: 0px;
+            font-size: 20px;
+        }
+
+        .node {
+            stroke: #fff;
+            stroke-width: 1px;
+            cursor: pointer;
+        }
+        .node.other {
+            stroke: #fff;
+            stroke-width: 0px;
+            cursor: pointer;
+        }
+        .node.self {
+            stroke: #000000;
+            stroke-width: 1.5px;
+        }
+        .node.used {
+            stroke: #09af3d;
+            stroke-width: 1.5px;
+        }
+        .node.using {
+            stroke: #ff6462;
+            stroke-width: 1.5px;
+        }
+
+        .link {
+            stroke: #999;
+            stroke-opacity: .3;
+        }
+
+        .link {
+            stroke: #999;
+            stroke-opacity: .3;
+        }
+
+        .link {
+            stroke: #999;
+            stroke-opacity: .3;
+        }
+
+    </style>
+</head>
+<body>
+<div id="info"></div>
+<svg id="draw_zone"></svg>
+<script src="dist/js/index.js"></script>
+
+</body>
+</html>
