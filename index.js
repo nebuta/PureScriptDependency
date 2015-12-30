@@ -287,14 +287,5 @@ function addLegend(svg) {
         }
     });
 
-    svg.append('text').text('Hover on a node to show dependency, click to hold selection.')
-        .attr({x: 10, y: 10}).style({
-        'font-size': 12,
-        'font-weight': 'bold'
-    });
-    svg.append('text').text('(Click background to clear selection.)')
-        .attr({x: 10, y: 25}).style({
-        'font-size': 12,
-        'font-weight': 'bold'
-    });
+
 }
