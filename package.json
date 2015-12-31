@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd prep-data && ruby fetch_repos.rb && ruby mk_json.rb && cd .. && browserify index.js -o dist/js/index.js"
+    "build": "cd prep-data && ruby fetch_repos.rb && ruby mk_json.rb && cd .. && browserify index.js -o dist/js/index.js && uglify dist/js/index.js -o dist/js/index.min.js"
   },
   "author": "Nebuta <nebuta.office@gmail.com>",
   "license": "MIT",
@@ -19,6 +19,7 @@
     "gulp-util": "^3.0.7",
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",
+    "uglify-js": "^2.6.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.6.1"
